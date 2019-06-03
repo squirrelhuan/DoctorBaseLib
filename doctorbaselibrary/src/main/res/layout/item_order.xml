@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:clipChildren="false"
+              android:background="@drawable/panel_menu_main_bg"
+              android:layout_marginTop="5dp"
+              android:layout_marginBottom="5dp"
+              android:orientation="vertical">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="5dp">
+        <TextView
+                android:id="@+id/tv_order_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text=""
+                android:singleLine="true"
+                android:textColor="@color/main_color_gray_46"
+                android:textSize="16sp"/>
+
+        <TextView
+                android:id="@+id/tv_order_wait_time"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|right"
+                android:text=""
+                android:singleLine="true"
+                android:textColor="@color/main_color"
+                android:textSize="13sp"
+        />
+    </LinearLayout>
+    <View android:layout_width="match_parent"
+          android:layout_height="1px"
+          android:layout_marginTop="5dp"
+          android:layout_marginBottom="5dp"
+          android:clipChildren="false"
+          android:background="@color/main_color_gray_c3"></View>
+
+
+    <LinearLayout
+            android:id="@+id/ll_doctor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp">
+
+
+    </LinearLayout>
+
+    <TableLayout android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="12dp"
+                 android:layout_marginRight="12dp">
+        <TableRow
+                android:orientation="horizontal"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="病人"
+                    android:gravity="right"
+                    android:textColor="@color/main_color_gray_46_a65"
+                    android:textSize="14sp"
+            />
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp">
+                <TextView
+                        android:id="@+id/tv_order_patient_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="5dp"
+                        android:gravity="left"
+                        android:text=""
+                        android:textColor="@color/main_color_gray_46"
+                        android:textSize="14sp"
+                />
+            </LinearLayout>
+        </TableRow>
+        <TableRow
+                android:id="@+id/tr_order_doctor_name"
+                android:orientation="horizontal"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="专家"
+                    android:gravity="right"
+                    android:textColor="@color/main_color_gray_46_a65"
+                    android:textSize="14sp"
+            />
+
+            <TextView
+                    android:id="@+id/tv_order_doctor_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text=""
+                    android:textColor="@color/main_color_gray_46"
+                    android:textSize="14sp"
+            />
+        </TableRow>
+        <!--预约时间-->
+        <TableRow
+                android:orientation="horizontal"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="预约时间"
+                    android:textColor="@color/main_color_gray_46_a65"
+                    android:textSize="14sp"
+                    android:gravity="right"
+            />
+
+            <TextView
+                    android:id="@+id/tv_order_start_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text=""
+                    android:textColor="@color/main_color_gray_46"
+                    android:textSize="14sp"
+            />
+        </TableRow>
+
+
+    </TableLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:overScrollMode="never">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <FrameLayout android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:layout_marginBottom="12dp"
+                 android:layout_marginLeft="12dp"
+                 android:layout_marginRight="12dp"
+                 android:paddingTop="4dp"
+                 android:paddingBottom="4dp">
+
+        <TextView
+                android:id="@+id/tv_bottom_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:text=""
+                android:gravity="left"
+                android:layout_gravity="left"
+                android:textColor="@color/main_color"
+                android:textSize="12sp"
+        />
+
+        <Button
+                android:id="@+id/btn_order_btn_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:text="取消"
+                android:gravity="center"
+                android:layout_gravity="left|center_vertical"
+                android:minHeight="0dp"
+                android:background="@drawable/button_common_small_normal"
+                android:textColor="@color/main_color_gray_46_a65"
+                android:textSize="14sp"
+        />
+
+        <Button
+                android:id="@+id/btn_order_btn_center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:background="@drawable/button_common_small_selected"
+                android:text="修改时间"
+                android:gravity="center"
+                android:layout_gravity="center|center_vertical"
+                android:minHeight="0dp"
+                android:textColor="@drawable/text_color_common"
+                android:textSize="14sp"
+        />
+
+        <Button
+                android:id="@+id/btn_order_btn_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:background="@drawable/button_common_small_selected"
+                android:text="修改时间"
+                android:gravity="center"
+                android:layout_gravity="right|center_vertical"
+                android:minHeight="0dp"
+                android:textColor="@drawable/text_color_common"
+                android:textSize="14sp"
+        />
+
+    </FrameLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main_background_color">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical">
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_margin="12dp"
+                      android:orientation="vertical"
+                      android:background="@drawable/panel_menu_main_bg">
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:padding="12dp"
+                          android:gravity="center_vertical"
+                          android:orientation="horizontal">
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="骨科"
+                        android:textColor="@color/main_color_gray_46"
+                        android:textSize="16sp"
+                />
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="180615202420"
+                        android:textColor="@color/main_color_gray_46"
+                        android:textSize="16sp"
+                />
+            </LinearLayout>
+
+            <View android:layout_width="match_parent"
+                  android:layout_height="1px"
+                  android:paddingLeft="-12dp"
+                  android:paddingRight="-12dp"
+                  android:background="@color/main_color_gray_c3"></View>
+
+            <TableLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                         android:padding="10dp">
+                <TableRow
+                        android:orientation="horizontal"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp">
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="病人"
+                            android:gravity="right"
+                            android:textColor="@color/main_color_gray_46_a65"
+                            android:textSize="14sp"
+                    />
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp">
+                        <TextView
+                                android:id="@+id/tv_order_patient_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawablePadding="5dp"
+                                android:gravity="left"
+                                android:text=""
+                                android:textColor="@color/main_color_gray_46"
+                                android:textSize="14sp"
+                        />
+                    </LinearLayout>
+                </TableRow>
+                <TableRow
+                        android:id="@+id/tr_order_doctor_name"
+                        android:orientation="horizontal"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp">
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="专家"
+                            android:gravity="right"
+                            android:textColor="@color/main_color_gray_46_a65"
+                            android:textSize="14sp"
+                    />
+
+                    <TextView
+                            android:id="@+id/tv_order_doctor_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:text=""
+                            android:textColor="@color/main_color_gray_46"
+                            android:textSize="14sp"
+                    />
+                </TableRow>
+                <!--预约时间-->
+                <TableRow
+                        android:orientation="horizontal"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp">
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="诊断日期"
+                            android:textColor="@color/main_color_gray_46_a65"
+                            android:textSize="14sp"
+                            android:gravity="right"
+                    />
+
+                    <TextView
+                            android:id="@+id/tv_order_start_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:text=""
+                            android:textColor="@color/main_color_gray_46"
+                            android:textSize="14sp"
+                    />
+                </TableRow>
+                <!--预约时间-->
+                <TableRow
+                        android:orientation="horizontal"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp">
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="诊断时长"
+                            android:textColor="@color/main_color_gray_46_a65"
+                            android:textSize="14sp"
+                            android:gravity="right"
+                    />
+
+                    <TextView
+                            android:id="@+id/tv_order_use_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:text=""
+                            android:textColor="@color/main_color_gray_46"
+                            android:textSize="14sp"
+                    />
+                </TableRow><!--预约时间-->
+                <TableRow
+                        android:orientation="horizontal"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp">
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="费用"
+                            android:textColor="@color/main_color_gray_46_a65"
+                            android:textSize="14sp"
+                            android:gravity="right"
+                    />
+
+                    <TextView
+                            android:id="@+id/tv_order_charge"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:text=""
+                            android:textColor="@color/main_color"
+                            android:textSize="14sp"
+                    />
+                </TableRow>
+
+            </TableLayout>
+        </LinearLayout>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_marginLeft="20dp"
+                android:text="使用优惠劵："
+                android:textColor="@color/main_color_gray_46"
+                android:textSize="14sp"
+        />
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_margin="12dp"
+                      android:paddingLeft="10dp"
+                      android:paddingRight="10dp"
+                      android:orientation="horizontal"
+                      android:background="@drawable/panel_menu_main_bg">
+            <TextView
+                    android:id="@+id/tv_coupon_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:paddingTop="17dp"
+                    android:paddingBottom="17dp"
+                    android:text="优惠劵(现有0张）"
+                    android:textColor="@color/main_color_gray_46"
+                    android:textSize="14sp"
+            />
+            <TextView
+                    android:id="@+id/tv_coupon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:paddingTop="17dp"
+                    android:drawablePadding="15dp"
+                    android:paddingBottom="17dp"
+                    android:paddingRight="15dp"
+                    android:text=""
+                    android:drawableRight="@mipmap/ic_arrow_right_selected"
+                    android:textColor="@color/main_color"
+                    android:textSize="14sp"
+            />
+
+        </LinearLayout>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_marginLeft="20dp"
+                android:text="选择支付方式："
+                android:textColor="@color/main_color_gray_46"
+                android:textSize="14sp"
+        />
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical"
+                      android:layout_margin="12dp"
+                      android:background="@drawable/panel_menu_main_bg">
+
+
+            <FrameLayout android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:paddingLeft="12dp"
+                         android:paddingRight="12dp">
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="37dp"
+                          android:gravity="center_vertical"
+                          android:textColor="@color/main_color_gray_46"
+                          android:text="还需支付"/>
+                <TextView
+                        android:id="@+id/tv_will_pay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="37dp"
+                        android:layout_marginRight="29dp"
+                        android:gravity="center_vertical"
+                        android:layout_gravity="right"
+                        android:textColor="@color/main_color"
+                        android:text=""/>
+            </FrameLayout>
+
+            <View android:layout_width="match_parent"
+                  android:layout_height="1px"
+                  android:background="@color/main_color_gray_c3"/>
+            <RadioGroup
+                    android:id="@+id/rg_pay_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="29dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:orientation="vertical">
+
+                <RadioButton
+                        android:id="@+id/rb_pay_01"
+                        android:layout_width="match_parent"
+                        android:layout_margin="0dp"
+                        android:layout_height="50dp"
+                        android:checked="true"
+                        android:drawableLeft="@mipmap/ic_weixin"
+                        android:drawablePadding="5dp"
+                        android:drawableRight="@drawable/checkbox_circle"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:button="@null"
+                        android:layout_centerVertical="true"
+                        android:textSize="14sp"
+                        android:textColor="@color/main_color_gray_46"
+                        android:text="微信支付"/>
+
+                <RadioButton
+                        android:id="@+id/rb_pay_02"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="0dp"
+                        android:drawableLeft="@mipmap/ic_zhifubao"
+                        android:drawablePadding="5dp"
+                        android:drawableRight="@drawable/checkbox_circle"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:button="@null"
+                        android:layout_centerVertical="true"
+                        android:textSize="14sp"
+                        android:textColor="@color/main_color_gray_46"
+                        android:text="支付宝支付"/>
+
+                <RadioButton
+                        android:id="@+id/rb_pay_03"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="0dp"
+                        android:drawableLeft="@mipmap/ic_yinxingqia"
+                        android:drawablePadding="5dp"
+                        android:drawableRight="@drawable/checkbox_circle"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:button="@null"
+                        android:layout_centerVertical="true"
+                        android:textSize="14sp"
+                        android:visibility="gone"
+                        android:textColor="@color/main_color_gray_46"
+                        android:text="银行卡支付"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+        <TextView
+                android:id="@+id/tv_submit"
+                style="@style/button_big"
+                android:layout_margin="12dp"
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:text="立即支付"/>
+    </LinearLayout>
+
+</ScrollView>

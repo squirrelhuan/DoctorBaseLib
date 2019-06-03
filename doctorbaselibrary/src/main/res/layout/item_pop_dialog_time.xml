@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_marginTop="5dp"
+              android:layout_marginBottom="5dp"
+              android:padding="20dp"
+              android:background="@drawable/dialog_select_cardtype"
+              android:orientation="vertical">
+
+    <!-- android:background="@drawable/panel_menu_main_bg"-->
+
+    <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="21dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:gravity="center"
+            android:text="修改时间"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+
+
+    <View android:layout_width="match_parent"
+          android:layout_height="1px"
+          android:background="@color/main_color_gray_c3"
+          android:layout_marginLeft="50dp"
+          android:layout_marginRight="50dp"></View>
+
+
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@color/white"
+            android:padding="0dp">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical">
+
+            <cn.demomaster.huan.quickdeveloplibrary.view.pickview.LoopView2
+                    android:id="@+id/pv_picker_month_day"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    app:textSize="16sp"
+                    app:canLoop="false"/>
+
+            <cn.demomaster.huan.quickdeveloplibrary.view.pickview.LoopView2
+                    android:id="@+id/pv_picker_hour"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:textSize="16sp"
+                    app:canLoop="false"/>
+
+            <cn.demomaster.huan.quickdeveloplibrary.view.pickview.LoopView2
+                    android:id="@+id/pv_picker_minute"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    app:textSize="16sp"
+                    app:canLoop="false"/>
+
+            <!-- <cn.demomaster.huan.quickdeveloplibrary.view.pickview.LoopView
+                 android:id="@+id/picker_meridian"
+                 android:layout_width="0dp"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="1dp"
+                 android:layout_weight="1"
+                 app:textSize="20sp"
+                 app:canLoop="false"/>-->
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <TextView
+            android:id="@+id/btn_confirm"
+            style="@style/button_login"
+            android:layout_marginTop="5dp"
+            android:text="提交"/>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="友情提示：仅有一次可修改时间的机会"
+            android:textColor="@color/main_color"
+            android:textSize="12sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+    />
+
+</LinearLayout>

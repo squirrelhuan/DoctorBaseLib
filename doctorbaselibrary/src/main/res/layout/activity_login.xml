@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/rel_root"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@mipmap/ic_login_bg">
+
+    <ImageView android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="138dp"
+               android:layout_centerHorizontal="true"
+               android:src="@mipmap/ic_slogan"/>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_alignParentBottom="true"
+                  android:orientation="vertical"
+                  android:layout_marginLeft="38dp"
+                  android:layout_marginRight="38dp"
+                  android:layout_marginBottom="51dp">
+
+        <EditText
+                android:id="@+id/et_telephone"
+                style="@style/edit_text_login"
+                android:inputType="phone"
+                android:hint="@string/Please_enter_cell_phone_number"/>
+        <EditText
+                android:id="@+id/et_password"
+                style="@style/edit_text_login"
+                android:layout_marginTop="19dp"
+                android:inputType="textPassword"
+                android:hint="@string/Please_input_a_password"/>
+
+        <TextView
+                android:id="@+id/btn_login"
+                style="@style/button_login"
+                android:layout_marginTop="19dp"
+                android:text="@string/login"/>
+
+        <RelativeLayout android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+            <TextView android:id="@+id/tv_register"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      style="@style/login_text_small"
+                      android:text="@string/New_user_registration"/>
+            <TextView android:id="@+id/tv_findPassword"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_alignParentRight="true"
+                      style="@style/login_text_small"
+                      android:text="@string/Forget_the_password"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

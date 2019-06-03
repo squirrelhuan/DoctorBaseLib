@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>-->
+    <color name="colorPrimary">@color/main_color</color>
+    <color name="colorPrimaryDark">@color/main_color</color>
+    <color name="colorAccent">@color/main_color</color>
+    <color name="main_background_color">#FBFAF8</color>
+
+
+    <!--颜色-->
+    <color name="transparent">#00000000</color>
+    <color name="white">#ffffffff</color><!--白色 -->
+    <color name="black">#000000</color>
+    <color name="red">#FF0000</color>
+
+    <color name="green">#008000</color><!--绿色 -->
+    <color name="green_light">#00ff7f</color>
+
+    <!--主色调-->
+    <color name="main_color">#fffd4772</color>
+    <color name="main_color_light">#75FD4772</color>
+
+    <color name="main_color_gray_46">#ff464646</color>
+    <color name="main_color_gray_46_a15">#26464646</color><!--透明度0.15-->
+    <color name="main_color_gray_46_a35">#56464646</color><!--透明度0.35-->
+    <color name="main_color_gray_46_a65">#a6464646</color><!--透明度0.65-->
+    <color name="main_color_gray_46_a85">#d9464646</color><!--透明度0.85-->
+    <color name="main_color_gray_c3">#ffC3C3C5</color>
+
+    <color name="blue">#ffccddff</color>
+    <color name="grey">#58616d</color>
+    <color name="darkgrey">#ff404040</color>
+    <color name="toasterro">#9fd524</color>
+    <color name="lightgrey">#ff888888</color>
+    <color name="semitransparent">#80000000</color>
+    <color name="lightransparent">#a0000000</color>
+    <color name="navpage">#FFE1E8EB</color>
+
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="100dp"
+              android:orientation="vertical"
+              android:background="@drawable/department_grid"
+              android:padding="5dp"
+              android:gravity="center_horizontal"
+              android:clickable="true">
+
+    <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="40dp"
+               android:layout_height="40dp"
+            android:layout_margin="10dp"
+               android:src="@mipmap/ic_menu_pay"/>
+    <TextView
+            android:id="@+id/tv_depart_title"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textSize="14dp"
+            android:textColor="#464646"
+            android:gravity="center"/>
+</LinearLayout>

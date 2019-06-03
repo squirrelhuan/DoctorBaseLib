@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                                       xmlns:app="http://schemas.android.com/apk/res-auto"
+                                       xmlns:tools="http://schemas.android.com/tools"
+                                       android:layout_width="match_parent"
+                                       android:layout_height="match_parent"
+                                       android:background="@color/main_background_color"
+                                       android:padding="12dp"
+                                       tools:ignore="MissingDefaultResource">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/panel_menu_main_bg"
+                android:orientation="vertical">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="12dp">
+
+                <TextView
+                        android:id="@+id/tv_order_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/main_color_gray_46"
+                        android:textSize="16sp"/>
+
+                <TextView
+                        android:id="@+id/tv_order_appointment_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical|right"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/main_color_gray_46"
+                        android:textSize="14sp"/>
+            </LinearLayout>
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/main_color_gray_c3"
+                    android:clipChildren="false"></View>
+
+            <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp">
+
+                <TableRow
+                        android:orientation="horizontal"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:text="病人"
+                            android:textColor="@color/main_color_gray_c3"
+                            android:textSize="14sp"/>
+                    <TextView
+                            android:id="@+id/tv_order_patient_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="30dp"
+                            android:gravity="left|center_vertical"
+                            android:text=""
+                            android:textColor="@color/main_color_gray_46"
+                            android:textSize="14sp"/>
+                </TableRow>
+
+                <TableRow
+                        android:orientation="horizontal"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:text="专家"
+                            android:textColor="@color/main_color_gray_c3"
+                            android:textSize="14sp"/>
+
+                    <TextView
+                            android:id="@+id/tv_order_doctor_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:text=""
+                            android:textColor="@color/main_color_gray_46"
+                            android:textSize="14sp"/>
+
+                </TableRow>
+
+                <TableRow
+                        android:orientation="horizontal"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:text="诊断日期"
+                            android:textColor="@color/main_color_gray_c3"
+                            android:textSize="14sp"/>
+
+                    <TextView
+                            android:id="@+id/tv_order_appointment_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:text=""
+                            android:textColor="@color/main_color_gray_46"
+                            android:textSize="14sp"/>
+                </TableRow>
+
+                <TableRow
+                        android:orientation="horizontal"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:text="诊断时长"
+                            android:textColor="@color/main_color_gray_c3"
+                            android:textSize="14sp"/>
+
+                    <TextView
+                            android:id="@+id/tv_order_appointment_duration"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:text=""
+                            android:textColor="@color/main_color_gray_46"
+                            android:textSize="14sp"/>
+                </TableRow>
+
+                <TableRow
+                        android:orientation="horizontal"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:text="费用"
+                            android:textColor="@color/main_color_gray_c3"
+                            android:textSize="14sp"/>
+
+                    <TextView
+                            android:id="@+id/tv_order_appointment_fee"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:text=""
+                            android:textColor="@color/main_color"
+                            android:textSize="14sp"/>
+                </TableRow>
+
+                <TableRow
+                        android:orientation="horizontal"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:text="病人满意度"
+                            android:textColor="@color/main_color_gray_c3"
+                            android:textSize="14sp"/>
+
+                    <cn.demomaster.huan.quickdeveloplibrary.widget.RatingBar
+                            android:id="@+id/ratingBar_satisfaction"
+                            android:layout_width="160dp"
+                            android:layout_marginLeft="30dp"
+                            android:layout_height="20dp"/>
+                </TableRow>
+
+                <TableRow
+                        android:orientation="horizontal"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:text="病人描述"
+                            android:textColor="@color/main_color_gray_c3"
+                            android:textSize="14sp"/>
+
+                    <TextView
+                            android:id="@+id/tv_order_desc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/main_color_gray_46"
+                            android:layout_marginLeft="30dp"
+                            android:textSize="14sp"/>
+                </TableRow>
+
+
+            </TableLayout>
+
+
+        </LinearLayout>
+
+
+        <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:paddingLeft="12dp"
+                android:paddingTop="12dp"
+                android:paddingRight="12dp"
+                android:paddingBottom="5dp"
+                android:background="@drawable/panel_menu_main_bg">
+
+            <TableRow
+                    android:orientation="horizontal"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="医生诊断"
+                        android:textColor="@color/main_color_gray_c3"
+                        android:textSize="14sp"/>
+
+                <TextView
+                        android:id="@+id/tv_order_diseaseName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="30dp"
+                        android:drawablePadding="5dp"
+                        android:gravity="left|center_vertical"
+                        android:text=""
+                        android:textColor="@color/main_color_gray_46"
+                        android:textSize="14sp"/>
+            </TableRow>
+
+            <TableRow
+                    android:orientation="horizontal"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="咨询意见"
+                        android:textColor="@color/main_color_gray_c3"
+                        android:textSize="14sp"/>
+
+                <TextView
+                        android:id="@+id/tv_order_diagnoseAdvise"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:drawablePadding="5dp"
+                        android:layout_marginLeft="30dp"
+                        android:gravity="left|center_vertical"
+                        android:text=""
+                        android:textColor="@color/main_color_gray_46"
+                        android:textSize="14sp"/>
+            </TableRow>
+
+            <TableRow
+                    android:orientation="horizontal"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="建议手术"
+                        android:textColor="@color/main_color_gray_c3"
+                        android:textSize="14sp"/>
+
+                <TextView
+                        android:id="@+id/tv_order_operation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:drawablePadding="5dp"
+                        android:layout_marginLeft="30dp"
+                        android:gravity="left|center_vertical"
+                        android:text=""
+                        android:textColor="@color/main_color_gray_46"
+                        android:textSize="14sp"/>
+            </TableRow>
+
+
+        </TableLayout>
+        <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="12dp"
+                android:orientation="horizontal">
+
+            <Button
+                    android:id="@+id/btn_order_btn_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:background="@drawable/button_common_small_selected"
+                    android:gravity="center"
+                    android:minHeight="0dp"
+                    android:paddingLeft="14dp"
+                    android:paddingTop="4dp"
+                    android:paddingRight="14dp"
+                    android:paddingBottom="4dp"
+                    android:visibility="gone"
+                    android:text="评价"
+                    android:textColor="@drawable/text_color_common"
+                    android:textSize="12sp"/>
+
+        </FrameLayout>
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

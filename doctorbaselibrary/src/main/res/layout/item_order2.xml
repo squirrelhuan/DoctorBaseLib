@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:clipChildren="false"
+              android:background="@drawable/panel_menu_main_bg"
+              android:layout_marginTop="5dp"
+              android:layout_marginBottom="5dp"
+              android:orientation="vertical">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="5dp"
+            android:paddingTop="12dp">
+        <TextView
+                android:id="@+id/tv_order_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text=""
+                android:singleLine="true"
+                android:textColor="@color/main_color_gray_46"
+                android:textSize="18sp"/>
+
+        <TextView
+                android:id="@+id/tv_order_state"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|right"
+                android:text=""
+                android:singleLine="true"
+                android:textColor="@color/main_color"
+                android:textSize="13sp"
+        />
+    </LinearLayout>
+    <View android:layout_width="match_parent"
+          android:layout_height="1px"
+          android:layout_marginLeft="-12dp"
+          android:layout_marginRight="-12dp"
+          android:layout_marginTop="5dp"
+          android:layout_marginBottom="5dp"
+          android:clipChildren="false"
+          android:background="@color/main_color_gray_c3"></View>
+
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:paddingLeft="12dp"
+                  android:paddingRight="12dp"
+                  android:paddingBottom="12dp"
+    android:orientation="horizontal">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="开始时间："
+                    android:textColor="@color/main_color_gray_46_a65"
+                    android:textSize="14sp"
+                    android:gravity="right"
+            />
+
+            <TextView
+                    android:id="@+id/tv_order_start_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:text=""
+                    android:textColor="@color/main_color_gray_46"
+                    android:textSize="14sp"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

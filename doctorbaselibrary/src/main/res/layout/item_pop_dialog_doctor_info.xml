@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/dialog_select_cardtype"
+                android:orientation="vertical">
+
+    <!-- android:background="@drawable/panel_menu_main_bg"-->
+
+    <cn.demomaster.huan.quickdeveloplibrary.widget.ImageTextView
+            android:id="@+id/iv_picture"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/ic_launcher"/>
+
+    <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:gravity="center"
+              android:layout_centerInParent="true"
+              android:text="0"
+              android:textSize="72sp"
+              android:textColor="@color/yellow"/>
+
+</RelativeLayout>

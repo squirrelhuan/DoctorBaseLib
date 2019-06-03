@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 背景图 -->
+    <item android:id="@android:id/background" android:drawable="@color/transparent" />
+    <!-- 第二进度图 -->
+    <item android:id="@android:id/secondaryProgress" android:drawable="@drawable/progress_common_secondary_bg">
+
+    </item>
+    <!-- 进度度 -->
+    <item android:id="@android:id/progress">
+        <clip >
+            <shape >
+                <corners android:radius="1dip"
+                    android:topRightRadius="1dip"
+                    android:bottomRightRadius="1dip"/>
+                <gradient
+                    android:startColor="@color/main_color"
+                    android:endColor="@color/main_color"
+                    android:angle="0"
+                    />
+                <!--stroke标签: 边框-->
+                <!--width 边框的宽度-->
+                <!--color 边框的颜色-->
+                <!--下面两个参数是 把边框变成虚线用-->
+                <!--dashGap 虚线中空格的长度-->
+                <!--dashWidth 虚线中实线的长度-->
+                <stroke
+                    android:width="5dip"
+                    android:color="@color/main_color"
+                    android:dashGap="0dip"
+                    android:dashWidth="0dip"/>
+            </shape>
+        </clip>
+    </item>
+</layer-list>

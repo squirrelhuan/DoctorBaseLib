@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main_background_color"
+        tools:context=".view.activity.user.patient.AddAllergyActivity">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_margin="12dp">
+        <EditText
+                android:id="@+id/et_tag"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/panel_background"
+                android:gravity="center_vertical"
+                android:layout_marginTop="21dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:hint="在此输入您的过敏药物……"
+                android:textColor="@color/main_color_gray_46"
+                android:textSize="12sp"
+        />
+
+        <TextView
+                android:id="@+id/tv_add_tag"
+                android:layout_width="match_parent"
+                android:layout_marginTop="29dp"
+                style="@style/button_big"
+                android:text="@string/confirm"/>
+
+    </LinearLayout>
+
+</LinearLayout>

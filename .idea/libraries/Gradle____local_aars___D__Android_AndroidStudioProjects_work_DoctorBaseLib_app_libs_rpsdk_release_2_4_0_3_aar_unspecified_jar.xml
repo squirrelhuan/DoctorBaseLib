@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: __local_aars__:D.\Android\AndroidStudioProjects\work\DoctorBaseLib\app\libs\rpsdk-release_2.4.0.3.aar:unspecified@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-rpsdk-release_2.4.0.3.aar/7dc8e2edfc4d54313d55b90b80aa9983/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-rpsdk-release_2.4.0.3.aar/7dc8e2edfc4d54313d55b90b80aa9983/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

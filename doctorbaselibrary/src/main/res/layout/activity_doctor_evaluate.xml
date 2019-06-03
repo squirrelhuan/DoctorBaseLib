@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/main_background_color"
+        tools:context=".view.activity.doctor.DoctorEvaluateActivity">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical"
+                  android:padding="12dp">
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:background="@drawable/panel_menu_main_bg">
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="40dp"
+                      android:gravity="center_vertical"
+                      android:orientation="horizontal">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:text="综合评价"
+                    android:textColor="@color/main_color_gray_46"
+                    android:textSize="14sp"/>
+
+            <cn.demomaster.huan.quickdeveloplibrary.widget.RatingBar
+                    android:layout_width="110dp"
+                    android:layout_height="14dp"
+                    android:layout_marginLeft="8dp"
+                    android:id="@+id/ratingBar_overall"/>
+
+        </LinearLayout>
+
+        <!--专业水平-->
+        <View android:layout_width="match_parent"
+              android:layout_height="1px"
+              android:background="#a0C3C3C5"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="3dp"
+                android:text="专业水平"
+                android:textColor="@color/main_color_gray_46"
+                android:textSize="12sp"
+        />
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:orientation="horizontal">
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center_vertical"
+                    android:text="	5星"
+                    android:textColor="@color/main_color_gray_46"
+                    android:textSize="10sp"
+            />
+            <ProgressBar
+                    android:id="@+id/pb_profession_01"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="6dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center_vertical"
+                    style="@android:style/Widget.ProgressBar.Horizontal"
+                    android:max="100"
+                    android:progress="80"
+                    android:progressDrawable="@drawable/progress_common"
+                    android:secondaryProgress="60"/>
+            <TextView
+                    android:id="@+id/tv_profession_01"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:gravity="left|center_vertical"
+                    android:text="80"
+                    android:textColor="@color/main_color_gray_46"
+                    android:textSize="10sp"
+            />
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:orientation="horizontal">
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center_vertical"
+                    android:text="	4星"
+                    android:textColor="@color/main_color_gray_46"
+                    android:textSize="10sp"
+            />
+            <ProgressBar
+                    android:id="@+id/pb_profession_02"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="6dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center_vertical"
+                    style="@android:style/Widget.ProgressBar.Horizontal"
+                    android:max="100"
+                    android:progress="30"
+                    android:progressDrawable="@drawable/progress_common"
+                    android:secondaryProgress="60"/>
+            <TextView
+                    android:id="@+id/tv_profession_02"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:gravity="left|center_vertical"
+                    android:text="30"
+                    android:textColor="@color/main_color_gray_46"
+                    android:textSize="10sp"
+            />
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:orientation="horizontal">
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center_vertical"
+                    android:text="	3星及以下"
+                    android:textColor="@color/main_color_gray_46"
+                    android:textSize="10sp"
+            />
+            <ProgressBar
+                    android:id="@+id/pb_profession_03"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="6dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center_vertical"
+                    style="@android:style/Widget.ProgressBar.Horizontal"
+                    android:max="100"
+                    android:progress="20"
+                    android:progressDrawable="@drawable/progress_common"
+                    android:secondaryProgress="60"/>
+            <TextView
+                    android:id="@+id/tv_profession_03"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:gravity="left|center_vertical"
+                    android:text="20"
+                    android:textColor="@color/main_color_gray_46"
+                    android:textSize="10sp"
+            />
+        </LinearLayout>
+
+        <!--服务态度-->
+        <View android:layout_width="match_parent"
+              android:layout_height="1px"
+              android:background="#a0C3C3C5"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="3dp"
+                android:text="服务态度"
+                android:textColor="@color/main_color_gray_46"
+                android:textSize="12sp"
+        />
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:orientation="horizontal">
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center_vertical"
+                    android:text="	5星"
+                    android:textColor="@color/main_color_gray_46"
+                    android:textSize="10sp"
+            />
+            <ProgressBar
+                    android:id="@+id/pb_service_01"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="6dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center_vertical"
+                    style="@android:style/Widget.ProgressBar.Horizontal"
+                    android:max="100"
+                    android:progress="80"
+                    android:progressDrawable="@drawable/progress_common"
+                    android:secondaryProgress="60"/>
+            <TextView
+                    android:id="@+id/tv_service_01"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:gravity="left|center_vertical"
+                    android:text="80"
+                    android:textColor="@color/main_color_gray_46"
+                    android:textSize="10sp"
+            />
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:orientation="horizontal">
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center_vertical"
+                    android:text="	4星"
+                    android:textColor="@color/main_color_gray_46"
+                    android:textSize="10sp"
+            />
+            <ProgressBar
+                    android:id="@+id/pb_service_02"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="6dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center_vertical"
+                    style="@android:style/Widget.ProgressBar.Horizontal"
+                    android:max="100"
+                    android:progress="30"
+                    android:progressDrawable="@drawable/progress_common"
+                    android:secondaryProgress="60"/>
+            <TextView
+                    android:id="@+id/tv_service_02"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:gravity="left|center_vertical"
+                    android:text="30"
+                    android:textColor="@color/main_color_gray_46"
+                    android:textSize="10sp"
+            />
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:orientation="horizontal">
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center_vertical"
+                    android:text="	3星及以下"
+                    android:textColor="@color/main_color_gray_46"
+                    android:textSize="10sp"
+            />
+            <ProgressBar
+                    android:id="@+id/pb_service_03"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="6dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center_vertical"
+                    style="@android:style/Widget.ProgressBar.Horizontal"
+                    android:max="100"
+                    android:progress="20"
+                    android:progressDrawable="@drawable/progress_common"
+                    android:secondaryProgress="60"/>
+            <TextView
+                    android:id="@+id/tv_service_03"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:gravity="left|center_vertical"
+                    android:text="20"
+                    android:textColor="@color/main_color_gray_46"
+                    android:textSize="10sp"
+            />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+            android:id="@+id/tv_evaluate_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="4dp"
+            android:text="全部评价（10）"
+            android:textColor="@color/main_color_gray_46"
+            android:textSize="12sp"
+    />
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recy_doctor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/panel_menu_main_bg"
+            android:overScrollMode="never">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+</LinearLayout>

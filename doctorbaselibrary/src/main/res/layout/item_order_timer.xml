@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center_vertical"
+              android:clipChildren="false"
+              android:orientation="horizontal">
+
+    <LinearLayout android:layout_width="20dp"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical"
+                  android:gravity="center_horizontal">
+        <View android:id="@+id/view_line_01"
+              android:layout_width="1px"
+              android:layout_height="11dp"
+              android:background="@color/main_color"></View>
+
+        <View android:id="@+id/view_line_02"
+              android:layout_width="1px"
+              android:layout_height="0dp"
+              android:layout_weight="1"
+              android:background="@color/main_color"></View>
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center_vertical"
+                  android:clipChildren="false"
+                  android:orientation="vertical">
+
+        <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="-14dp"
+                android:text=""
+                android:drawablePadding="10dp"
+                android:layout_marginTop="5dp"
+                android:drawableLeft="@mipmap/ic_timer_point_02"
+                android:singleLine="true"
+                android:textColor="@color/main_color_gray_c3"
+                android:textSize="11sp"/>
+
+
+        <TextView
+                android:id="@+id/tv_message"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="7dp"
+                android:gravity="center_vertical"
+                android:text=""
+                android:textColor="@color/main_color_gray_46"
+                android:textSize="13sp"
+        />
+    </LinearLayout>
+
+
+</LinearLayout>

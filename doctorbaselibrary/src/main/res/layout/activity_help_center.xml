@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background_color"
+    android:orientation="vertical"
+    tools:context=".view.activity.setting.HelpCenterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/panel_menu_main_bg"
+            android:orientation="vertical"
+            android:padding="17dp"
+            android:paddingTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1、平台如何进行收费的？"
+                android:textColor="@color/main_color_gray_46"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="8dp"
+                android:text="专家咨询服务费用按照专家的不同任职资格级别（职称）计费；主任医师2500元/30分钟，超出部分80元/1分钟；副主任医师2000元/30分钟，超出部分60元/1分钟；主治医师1000元/30分钟，超出部分30元/1分钟。每次服务时间约定为30分钟，不满30分钟按照30分钟计；超过30分钟后按照每1分钟额外计费，不满1分钟按照1分钟计。"
+                android:textColor="@color/main_color_gray_46_a65"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="2、服务流程"
+                android:textColor="@color/main_color_gray_46"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="50dp"
+                android:text="咨询用户通过专家上门平台初次就其本人的健康与疾病问题向其选定的专家或专科发布医疗信息咨询的服务需求，需进行本人实名认证，上传提交其本人头像、与实名信息相符的身份证的正面、反面、本人手持身份证正面的照片；若身份证件为护照，需上传提交其本人护照个人资料页（有头像）及手持个人资料页的照片。"
+                android:textColor="@color/main_color_gray_46_a65"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

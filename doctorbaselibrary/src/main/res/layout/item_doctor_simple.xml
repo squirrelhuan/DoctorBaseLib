@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/panel_menu_main_bg"
+              android:orientation="horizontal">
+
+
+            <TextView
+                    android:id="@+id/tv_doctor_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="13dp"
+                    android:text="ACB"
+                    android:textColor="@color/main_color_gray_46"
+                    android:textSize="16sp"/>
+
+
+</LinearLayout>

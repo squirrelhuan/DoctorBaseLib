@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/image_circle_head_bg_01"></item>
+    <item android:drawable="@drawable/image_circle_head_bg_02" android:state_active="true"></item>
+
+</selector>

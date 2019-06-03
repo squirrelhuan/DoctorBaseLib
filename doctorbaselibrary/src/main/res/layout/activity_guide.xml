@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+    <RelativeLayout
+            android:id="@+id/rel_root"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+
+        <androidx.viewpager.widget.ViewPager
+                android:id="@+id/guide_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:overScrollMode="never">
+        </androidx.viewpager.widget.ViewPager>
+
+        <LinearLayout
+                android:id="@+id/guide_ll_point"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="35dp"
+                android:gravity="center_horizontal">
+        </LinearLayout>
+
+        <ImageSwitcher
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+        </ImageSwitcher>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_start"
+                android:layout_marginBottom="30dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:background="@drawable/btn_green_small"
+                android:text="立即体验"
+                android:textColor="#15a4f9"
+                android:textSize="20sp"
+                android:layout_centerHorizontal="true"
+                android:layout_above="@+id/guide_ll_point"
+                android:visibility="gone"/>
+
+
+    </RelativeLayout>
+</RelativeLayout>

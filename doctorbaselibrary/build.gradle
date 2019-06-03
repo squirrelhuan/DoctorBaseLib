@@ -1,0 +1,107 @@
+apply plugin: 'com.android.library'
+
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion 28
+
+    defaultConfig {
+
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        /*ndk {
+            abiFilters "armeabi", "arm64-v8a", "x86"
+        }*/
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        sourceSets.main {
+            jniLibs.srcDir 'libs'
+        }
+        //友盟分享
+        debug {
+            minifyEnabled false
+            signingConfig signingConfigs.debug
+            proguardFiles 'proguard-rules.pro'
+        }
+    }
+    //友盟分享
+    signingConfigs {
+        debug {
+            storeFile file('debug.keystore')
+            storePassword "4772317999"
+            keyAlias "cgqsigned"
+            keyPassword "4772317999"
+        }
+    }
+
+    buildToolsVersion '28.0.3'
+
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+dependencies {
+    implementation fileTree(include: ['*.jar', '*.aar'], dir: 'libs')
+    //implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+    implementation 'androidx.appcompat:appcompat:1.0.0-beta01'
+    implementation 'com.google.android.material:material:1.0.0-beta01'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.1.0-alpha4'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0-alpha4'
+
+    /*因为它最低版本从16调整到19*/
+    //implementation 'com.github.shenyuanqing.zxing:zxing-simplify:1.0.5'
+    //implementation project(path: ':cclib')
+    // 二维码扫描
+    //implementation 'cn.yipianfengye.android:zxing-library:2.2'
+    //加密
+    implementation 'commons-codec:commons-codec:1.6'
+    implementation 'org.bouncycastle:bcprov-jdk15on:1.49'
+    // 网络请求
+    implementation 'com.loopj.android:android-async-http:1.4.9'
+    // anko
+    implementation 'org.jetbrains.anko:anko-sdk15:0.9.1'
+    implementation 'org.jetbrains.anko:anko-support-v4:0.9.1'
+    implementation 'org.jetbrains.anko:anko-appcompat-v7:0.9.1'
+    // qiniu
+    implementation 'com.qiniu:qiniu-android-sdk:7.3.12'
+    // 下拉刷新
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.5.1'
+    implementation 'com.scwang.smartrefresh:SmartRefreshHeader:1.0.5.1'
+    // multidex
+    /*implementation 'com.android.support:multidex:1.0.3'*/
+    // 选择图片
+    implementation 'com.github.LuckSiege.PictureSelector:picture_library:v2.2.3'
+    // 权限控制
+    implementation 'pub.devrel:easypermissions:1.2.0'
+    implementation 'com.github.squirrelhuan:QuickDevelop:1.1.23'
+    implementation 'com.aliyun.dpa:oss-android-sdk:+'
+    /*百度ocr*/
+    implementation files('libs/ocr-sdk.jar')
+    implementation project(path: ':ocr_ui')
+    //微信支付
+    implementation 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:+'
+    implementation 'cn.jiguang.sdk:jpush:3.1.6'
+    // 此处以JPush 3.1.6 版本为例。
+    implementation 'cn.jiguang.sdk:jcore:1.2.5'
+    // 此处以JCore 1.2.5 版本为例。
+
+
+    api 'org.greenrobot:eventbus:3.1.1'
+}

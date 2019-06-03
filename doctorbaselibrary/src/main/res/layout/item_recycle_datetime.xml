@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:paddingTop="5dp"
+              android:gravity="center_horizontal"
+              android:background="?android:attr/selectableItemBackground"
+              android:clickable="true">
+
+    <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="9sp"
+            android:textColor="@color/main_color_gray_46"
+            android:gravity="center"/>
+
+    <cn.demomaster.huan.doctorbaselibrary.view.widget.textview.DateTimeCellView
+            android:id="@+id/dtc_time"
+            android:layout_width="match_parent"
+            android:layout_margin="5dp"
+            android:layout_height="30dp"/>
+
+    <View
+            android:id="@+id/view_line"
+            android:layout_width="match_parent"
+          android:layout_height="1px"
+          android:background="#a0C3C3C5"/>
+
+</LinearLayout>

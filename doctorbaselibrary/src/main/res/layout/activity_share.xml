@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/main_background_color"
+              android:orientation="vertical"
+              tools:context=".view.activity.setting.HelpCenterActivity">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/panel_menu_main_bg"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="17dp"
+                android:paddingTop="20dp">
+
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:drawableTop="@mipmap/ic_share_01"
+                    android:drawablePadding="10dp"
+                    android:text="实名认证"
+                    android:textColor="@color/main_color_gray_46"
+                    android:textSize="12sp"/>
+
+            <ImageView android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginBottom="13dp"
+                       android:src="@mipmap/ic_share_arrow"/>
+
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:drawableTop="@mipmap/ic_share_02"
+                    android:drawablePadding="10dp"
+                    android:text="好友注册"
+                    android:textColor="@color/main_color_gray_46"
+                    android:textSize="12sp"/>
+
+            <ImageView android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginBottom="13dp"
+                       android:src="@mipmap/ic_share_arrow"/>
+
+            <TextView
+                android:id="@+id/tv_001"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:drawableTop="@mipmap/ic_share_03"
+                    android:drawablePadding="10dp"
+                    android:text="获得抵用金"
+                    android:textColor="@color/main_color_gray_46"
+                    android:textSize="12sp"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/panel_menu_main_bg"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:padding="17dp"
+                android:paddingTop="20dp">
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textColor="@color/main_color_gray_46"
+                      android:text="活动细则"
+                      android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                    android:id="@+id/tv_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:lineHeight="20dp"
+                    android:text="1. 奖励一：已完成实名认证的主注册用户每邀请一位好友注册专家上门app成功，邀请人可获得抵用金200元。\n
+2. 奖励二：被邀请的好友完成实名认证成功，邀请人可再获得抵用金300元。"
+                    android:textColor="@color/main_color_gray_46"
+                    android:textSize="12sp"
+            />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+            android:id="@+id/tv_share"
+            android:layout_width="match_parent"
+            android:layout_marginTop="29dp"
+            android:layout_margin="13dp"
+            style="@style/button_big"
+            android:text="立即邀请"/>
+
+</LinearLayout>

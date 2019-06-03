@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:paddingLeft="12dp"
+              android:paddingRight="12dp"
+              android:orientation="vertical">
+
+    <!--省份，城市，区县-->
+    <LinearLayout
+            style="@style/input_panel_big"
+            android:layout_marginTop="0dp">
+        <ImageView
+                style="@style/register_panel_image"
+                android:src="@mipmap/ic_position"/>
+        <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                style="@style/register_panel_edit"
+                android:hint="点击选择省份，城市，区县"/>
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="35dp"
+                  android:orientation="horizontal">
+        <RadioButton
+                android:id="@+id/rb_set_default"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:button="@drawable/checkbox_circle"
+                android:gravity="center_vertical"
+                android:textColor="@drawable/textcolor_address"
+                android:textSize="12sp"
+                android:paddingLeft="10dp"
+                android:text="默认地址"/>
+        <LinearLayout android:layout_width="0dp"
+                      android:layout_weight="1"
+                      android:layout_height="match_parent"
+                      android:gravity="center">
+            <TextView
+                    android:id="@+id/tv_address_edit"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="编辑"
+                    android:textColor="@color/main_color_gray_46"
+                    android:textSize="12sp"
+            />
+            <TextView
+                    android:id="@+id/tv_address_delete"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="删除"
+                    android:textColor="@color/main_color_gray_46"
+                    android:textSize="12sp"
+            />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

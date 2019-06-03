@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/main_background_color"
+              android:orientation="vertical"
+              tools:context=".view.activity.setting.HelpCenterActivity">
+
+    <!--<androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp">
+        <CheckBox
+                android:id="@+id/cb_use_coupon"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:padding="12dp"
+                android:checked="true"
+                android:button="@null"
+                android:drawableRight="@drawable/radiobutton_main_01"
+                android:text="不使用优惠劵"/>
+    </androidx.cardview.widget.CardView>-->
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

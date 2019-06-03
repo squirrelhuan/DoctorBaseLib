@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/main_background_color"
+              android:orientation="vertical"
+              tools:context=".view.activity.order.AppointmentActivity">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="12dp">
+
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:textSize="12sp"
+                      android:textColor="@color/main_color"
+                      android:gravity="center_horizontal"
+                      android:text="专家上门仅提供健康、医疗、养老的咨询建议，不进行相关的治疗"/>
+            <!--用户名-->
+            <LinearLayout style="@style/input_panel_big">
+
+                <ImageView
+                        style="@style/register_panel_image"
+                        android:src="@mipmap/ic_user_name"/>
+
+                <TextView
+                        android:id="@+id/tv_patient_name"
+                        style="@style/register_panel_edit"
+                        android:layout_width="match_parent"
+                        android:contentDescription="@string/Full_name"
+                        android:hint="@string/Please_input_your_name"/>
+            </LinearLayout>
+
+            <!--地址-->
+            <LinearLayout style="@style/input_panel_big">
+
+                <ImageView
+                        style="@style/register_panel_image"
+                        android:src="@mipmap/ic_position"/>
+
+                <TextView
+                        android:id="@+id/tv_address"
+                        style="@style/register_panel_edit"
+                        android:layout_width="match_parent"
+                        android:gravity="center_vertical"
+                        android:hint="地址"
+                        android:inputType="phone"/>
+            </LinearLayout>
+
+            <!--时间-->
+            <LinearLayout style="@style/input_panel_big">
+
+                <ImageView
+                        style="@style/register_panel_image"
+                        android:src="@mipmap/ic_timer"/>
+
+                <TextView
+                        android:id="@+id/tv_time"
+                        style="@style/register_panel_edit"
+                        android:layout_width="match_parent"
+                        android:gravity="center_vertical"
+                        android:hint="时间"
+                        android:inputType="phone"/>
+            </LinearLayout>
+
+            <!--用户名-->
+            <LinearLayout
+                    android:id="@+id/ll_panel_doctor_name"
+                    style="@style/input_panel_big">
+
+                <ImageView
+                        style="@style/register_panel_image"
+                        android:src="@mipmap/ic_menu_expert"/>
+
+                <TextView
+                        android:id="@+id/tv_doctor_name"
+                        style="@style/register_panel_edit"
+                        android:layout_width="match_parent"
+                        android:contentDescription="@string/Full_name"
+                        android:hint="医生名"/>
+            </LinearLayout>
+
+            <!--科室-->
+            <LinearLayout
+                    android:id="@+id/ll_panel_department"
+                    style="@style/input_panel_big">
+
+                <ImageView
+                        style="@style/register_panel_image"
+                        android:src="@mipmap/ic_category_small"/>
+
+                <TextView
+                        android:id="@+id/tv_department_name"
+                        style="@style/register_panel_edit"
+                        android:layout_width="match_parent"
+                        android:contentDescription="@string/Full_name"
+                        android:hint="科室"/>
+            </LinearLayout>
+
+            <!--主任医师-->
+            <RadioGroup
+                    android:id="@+id/rg_doctor_type"
+                    style="@style/input_panel_big"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:gravity="center">
+
+                <CheckBox
+                        android:id="@+id/rb_doctor_type_01"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:paddingLeft="6dp"
+                        android:checked="true"
+                        android:button="@drawable/checkbox_cube"
+                        android:text="主任医师"/>
+
+                <CheckBox
+                        android:id="@+id/rb_doctor_type_02"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:paddingLeft="6dp"
+                        android:checked="true"
+                        android:button="@drawable/checkbox_cube"
+                        android:text="副主任医师"/>
+
+                <CheckBox
+                        android:id="@+id/rb_doctor_type_03"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:paddingLeft="6dp"
+                        android:checked="true"
+                        android:button="@drawable/checkbox_cube"
+                        android:text="主治医师"/>
+            </RadioGroup>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="17dp"
+                    android:text="病情描述"
+                    android:textColor="@color/main_color_gray_46"
+                    android:textSize="14sp"/>
+
+            <EditText
+                    android:id="@+id/et_description"
+                    style="@style/input_panel_big"
+                    android:layout_height="125dp"
+                    android:layout_marginTop="6dp"
+                    android:gravity="top"
+                    android:maxLength="250"
+                    android:padding="5dp"/>
+
+            <TextView
+                    android:id="@+id/tv_photo_tip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginBottom="6dp"
+                    android:text="上传照片，最多可上传十张"
+                    android:textColor="@color/main_color_gray_46"
+                    android:textSize="14sp"/>
+            <cn.demomaster.huan.quickdeveloplibrary.helper.simplepicture.view.SimplePictureGallery
+                    android:id="@+id/ga_picture"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_register_bg">
+
+            </cn.demomaster.huan.quickdeveloplibrary.helper.simplepicture.view.SimplePictureGallery>
+
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginTop="12dp"
+                          android:orientation="horizontal">
+
+
+                <ImageView
+                        android:id="@+id/iv_agree"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp"
+                        android:button="@null"
+                        android:src="@drawable/checkbox_circle"
+                        android:gravity="center"
+                />
+                <TextView
+                        android:id="@+id/tv_price_tip"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/main_color"
+                        android:paddingTop="13dp"
+                        android:lineHeight="25dp"
+                        android:text="您预约的专家“主任医师”2500元/30分钟，超出部分80元/1分钟；副主任医师2000元/30分钟，超出部分60元/1分钟。每次服务时间约定为30分钟，不满30分钟按照30分钟计；超过30分钟后按照每1分钟额外计费，不满1分钟按照1分钟计；请勾选表示知悉。"/>
+            </LinearLayout>
+
+            <TextView
+                    android:id="@+id/tv_submit"
+                    style="@style/button_big"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:text="确认"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

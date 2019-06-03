@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/activity_actionbar_height"
+              android:paddingTop="@dimen/activity_statebar_height"
+              android:background="@color/main_background_color"
+
+              android:orientation="vertical"
+              >
+    <!--android:background="@drawable/activity_actionbar_bg"-->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView
+            android:id="@+id/iv_actionbar_common_left"
+            android:layout_width="@dimen/activity_actionbar_button_width"
+            android:layout_height="@dimen/activity_actionbar_button_height"
+            android:padding="12dp"
+            android:contentDescription="返回按钮的位置"
+            android:src="@mipmap/ic_action_back"/>
+
+    <FrameLayout android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+        <TextView
+                android:id="@+id/tv_actionbar_common_title"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/activity_actionbar_button_height"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/main_color"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        <ImageView
+                android:id="@+id/iv_actionbar_common_notification"
+                android:layout_alignParentRight="true"
+                android:layout_width="@dimen/activity_actionbar_button_width"
+                android:layout_height="@dimen/activity_actionbar_button_width"
+                android:layout_gravity="center_vertical|right"
+                android:paddingLeft="15dp"
+                android:paddingRight="9dp"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"/>
+
+    </FrameLayout>
+
+
+    <ImageView
+            android:id="@+id/iv_actionbar_common_right"
+            android:layout_width="@dimen/activity_actionbar_button_width"
+            android:layout_height="@dimen/activity_actionbar_button_height"
+        android:layout_marginRight="16dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:contentDescription="右侧按钮的位置" />
+    </LinearLayout>
+
+
+ <!--   <View android:layout_width="match_parent"
+          android:layout_height="2dp"
+          android:layout_gravity="bottom"
+          android:background="#65EDEDED"
+    />-->
+</LinearLayout>

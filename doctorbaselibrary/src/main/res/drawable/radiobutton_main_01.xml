@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!-- 设置选择和未选中时显示的drawable -->
+<item android:state_checked="false" android:drawable="@mipmap/ic_checkbox_circle_normal"/>
+<item android:state_checked="true" android:drawable="@mipmap/ic_checkbox_circle_select"/>
+
+</selector>

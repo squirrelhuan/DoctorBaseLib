@@ -1,0 +1,23 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.squirrelhuan:QuickDevelop:1.1.23@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-QuickDevelop-1.1.23.aar/8ba6c77a7c30ed98d6b0a227587a9616/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-QuickDevelop-1.1.23.aar/8ba6c77a7c30ed98d6b0a227587a9616/jars/libs/umeng-share-core-6.9.4.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-QuickDevelop-1.1.23.aar/8ba6c77a7c30ed98d6b0a227587a9616/jars/libs/umeng-shareboard-widget-6.9.4.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-QuickDevelop-1.1.23.aar/8ba6c77a7c30ed98d6b0a227587a9616/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-QuickDevelop-1.1.23.aar/8ba6c77a7c30ed98d6b0a227587a9616/jars/libs/umeng-share-wechat-simplify-6.9.4.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-QuickDevelop-1.1.23.aar/8ba6c77a7c30ed98d6b0a227587a9616/jars/libs/umeng-common-2.0.2.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-QuickDevelop-1.1.23.aar/8ba6c77a7c30ed98d6b0a227587a9616/jars/libs/umeng-share-QQ-simplify-6.9.4.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-QuickDevelop-1.1.23.aar/8ba6c77a7c30ed98d6b0a227587a9616/jars/libs/SecurityEnvSDK-release-1.1.0.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-QuickDevelop-1.1.23.aar/8ba6c77a7c30ed98d6b0a227587a9616/jars/libs/umeng-share-sina-simplify-6.9.4.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-QuickDevelop-1.1.23.aar/8ba6c77a7c30ed98d6b0a227587a9616/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-QuickDevelop-1.1.23.aar/8ba6c77a7c30ed98d6b0a227587a9616/jars/libs/umeng-sharetool-6.9.4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.squirrelhuan/QuickDevelop/1.1.23/44d3d30a54c073e80c6d051af370f05a488b25f4/QuickDevelop-1.1.23-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
